@@ -1,5 +1,7 @@
 <?php
 
+// welcome to catabase 
+
 //start managing the user session.
 session_start();
 
