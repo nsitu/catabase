@@ -1,6 +1,8 @@
 <?php
 
-// welcome to catabase 
+// welcome to catabase
+
+// This is another comment for December 11th
 
 //start managing the user session.
 session_start();
