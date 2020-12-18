@@ -16,4 +16,5 @@ This code was developed by Harold Sikkema and serves as support material for Int
 * Create a folder in your public_html or www, and upload to it index.php along with /assets and /classes
 * Modify /classes/DB.php to match credentials for your database.
 
-
+## ERD
+![Entity Relationship Diagram](/catabase-erd.png)
