@@ -2,8 +2,8 @@
 class DB {
 
   function __construct(){
-    $hostname = getenv('DatabaseHostname');
-    $username = getenv('DatabaseUsername');
+    $hostname = getenv('DatabaseHost');
+    $username = getenv('DatabaseUser');
     $password = getenv('DatabasePassword');
     $database = getenv('DatabaseName');
     $this->ixd = new mysqli($hostname, $username, $password, $database);
