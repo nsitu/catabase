@@ -273,23 +273,6 @@ INSERT INTO `users` (`id`, `fullName`, `email`, `password`, `quote`, `signup_dat
 (56, '123', '123@qq.com', '$2y$10$8UsP5NkxC//MeZzMB/j6JeecgdlelKN4qhHTXrOSI81vAF78/dum2', '123', '2020-12-09', 'assets/avatars/14.png');
 
 
---
--- Dumping data for table `comments`
---
-
-INSERT INTO `comments` (`id`, `user_id`, `post_id`, `posted_at`, `body`) VALUES
-(15, 26, 60, '2020-12-08 20:41:13', 'This is original'),
-(16, 26, 60, '2020-12-08 20:43:38', 'ASD'),
-(17, 26, 60, '2020-12-08 20:45:34', 'qwer'),
-(19, 26, 61, '2020-12-09 10:10:47', 'It really is.'),
-(20, 26, 61, '2020-12-09 10:13:50', 'Seriously.'),
-(21, 4, 61, '2020-12-09 11:05:31', 'Why so serious?'),
-(22, 51, 63, '2020-12-09 11:35:07', 'wintery indeed'),
-(23, 51, 61, '2020-12-09 11:37:12', 'Curious to know some more details....'),
-(24, 26, 63, '2020-12-09 11:38:06', 'That\'s a lot of snow'),
-(25, 26, 48, '2020-12-09 11:45:27', 'Boxes are the best'),
-(26, 26, 63, '2020-12-09 12:35:42', 'Decembery'),
-(27, 26, 55, '2020-12-09 21:48:01', 'it\'s sidewalk time');
 
 
 --
@@ -405,6 +388,23 @@ INSERT INTO `posts` (`id`, `user_id`, `body`, `image`, `date_added`) VALUES
 (69, 55, 'hey', '', '2020-12-10 03:00:17');
 
 
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`id`, `user_id`, `post_id`, `posted_at`, `body`) VALUES
+(15, 26, 60, '2020-12-08 20:41:13', 'This is original'),
+(16, 26, 60, '2020-12-08 20:43:38', 'ASD'),
+(17, 26, 60, '2020-12-08 20:45:34', 'qwer'),
+(19, 26, 61, '2020-12-09 10:10:47', 'It really is.'),
+(20, 26, 61, '2020-12-09 10:13:50', 'Seriously.'),
+(21, 4, 61, '2020-12-09 11:05:31', 'Why so serious?'),
+(22, 51, 63, '2020-12-09 11:35:07', 'wintery indeed'),
+(23, 51, 61, '2020-12-09 11:37:12', 'Curious to know some more details....'),
+(24, 26, 63, '2020-12-09 11:38:06', 'That\'s a lot of snow'),
+(25, 26, 48, '2020-12-09 11:45:27', 'Boxes are the best'),
+(26, 26, 63, '2020-12-09 12:35:42', 'Decembery'),
+(27, 26, 55, '2020-12-09 21:48:01', 'it\'s sidewalk time');
 
 --
 -- Dumping data for table `likes`
