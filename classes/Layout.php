@@ -446,10 +446,10 @@ function friendsMeows($user){ ob_start(); ?>
 function regForm(){ ?>
   <form class="mt-2 p-4 text-center" id="regForm" action="<?=site_root?>" method="POST">
     <h2>new account</h2>
-    <input class="mt-2 form-control" type="text" name="reg_fullName" placeholder="Name" value="<?=$_SESSION['reg_fullName']?>" required>
-    <input class="mt-2 form-control" type="email" name="reg_email" placeholder="Email" value="<?=$_SESSION['reg_email']?>" required>
+    <input class="mt-2 form-control" type="text" name="reg_fullName" placeholder="Name" value="<?=$_SESSION['reg_fullName'] ?? '' ?>" required>
+    <input class="mt-2 form-control" type="email" name="reg_email" placeholder="Email" value="<?=$_SESSION['reg_email'] ?? '' ?>" required>
     <input class="mt-2 form-control" type="password" name="reg_password" placeholder="Password" required>
-    <input class="mt-2 form-control" type="text" name="reg_quote" placeholder="Favourite Quote" value="<?=$_SESSION['reg_quote']?>">
+    <input class="mt-2 form-control" type="text" name="reg_quote" placeholder="Favourite Quote" value="<?=$_SESSION['reg_quote'] ?? '' ?>">
     <button  class="mt-4 btn btn-primary" type="submit" name="reg_button">Register</button>
       <p  class="mt-4">
         Already have an account? <a href="#" id="signin" class="signin">Sign in here!</a>
