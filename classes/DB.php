@@ -2,10 +2,10 @@
 class DB {
 
   function __construct(){
-    $hostname = "localhost";
-    $username = "***";
-    $password = "***";
-    $database = "***";
+    $hostname = getenv('DatabaseHostname');
+    $username = getenv('DatabaseUsername');
+    $password = getenv('DatabasePassword');
+    $database = getenv('DatabaseName');
     $this->ixd = new mysqli($hostname, $username, $password, $database);
     $this->ixd->set_charset("utf8");
     if ($this->ixd->connect_error) {  die("Error: " . $this->ixd->connect_error);   }
